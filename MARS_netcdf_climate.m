@@ -44,7 +44,7 @@ for mod_loop = 1:2
         
         %% Excel API
         
-        xlsx_file = strjoin(strcat('D:\iLandDrive\MARS\CLIMATE\MARS_climate_',current_model,'_',station_name,'.xlsx'));
+        xlsx_file = strjoin(strcat('D:\...\MARS_climate_',current_model,'_',station_name,'.xlsx'));
         xlswrite(xlsx_file,'A1')
         %xlswrite(FILE,ARRAY,SHEET,RANGE)
         Excel = actxserver ('Excel.Application');
